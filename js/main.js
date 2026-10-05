@@ -100,7 +100,7 @@
   });
 
   // Scroll reveal
-  const items = document.querySelectorAll('.animal, .event-group, .steps li, .area, .project, .feature__img, .feature__copy');
+  const items = document.querySelectorAll('.animal, .events li, .steps li, .area, .project, .feature__img, .feature__copy');
   if ('IntersectionObserver' in window) {
     const io = new IntersectionObserver((entries) => {
       entries.forEach((en) => {

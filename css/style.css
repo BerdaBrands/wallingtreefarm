@@ -177,21 +177,18 @@ button { font: inherit; cursor: pointer; }
 @media (min-width: 640px) { .animals { grid-template-columns: repeat(4, 1fr); gap: 20px; } }
 
 /* ---------- Events ---------- */
-.event-groups { display: grid; gap: 18px; }
-.event-group {
+.events { display: grid; gap: 14px; }
+.events li {
   background: rgba(255, 248, 236, 0.1);
   border: 2px dashed rgba(255, 248, 236, 0.35);
   border-radius: var(--radius);
-  padding: 24px 22px;
+  padding: 22px;
 }
-.event-group h3 { font-size: 1.45rem; padding-bottom: 12px; margin-bottom: 6px; border-bottom: 2px solid rgba(255, 248, 236, 0.25); }
-.event-group li { display: grid; gap: 2px; padding: 12px 0 12px 26px; position: relative; border-bottom: 1px dashed rgba(255, 248, 236, 0.18); }
-.event-group li:last-child { border-bottom: 0; padding-bottom: 0; }
-.event-group li::before { content: '♥'; position: absolute; left: 2px; top: 13px; color: #9ff1f6; font-size: 0.95rem; }
-.event-group strong { font-family: var(--font-display); font-weight: 600; font-size: 1.12rem; color: #fff; }
-.event-group span { opacity: 0.88; font-size: 0.95rem; }
-.events__more { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 12px 16px; margin-top: 32px; text-align: center; font-weight: 700; }
-@media (min-width: 900px) { .event-groups { grid-template-columns: repeat(3, 1fr); gap: 22px; } }
+.events span { font-size: 2rem; }
+.events h3 { font-size: 1.35rem; margin: 6px 0 4px; }
+.events p { opacity: 0.9; }
+@media (min-width: 640px) { .events { grid-template-columns: repeat(2, 1fr); } }
+@media (min-width: 900px) { .events { grid-template-columns: repeat(3, 1fr); gap: 20px; } }
 
 /* ---------- Feature ---------- */
 .feature { display: grid; gap: 36px; align-items: center; }

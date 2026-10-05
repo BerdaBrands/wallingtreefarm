@@ -102,20 +102,35 @@
           <p class="script">Book your event today</p>
           <h2>Perfect For</h2>
         </header>
-        <ul class="events">
-          <li><span aria-hidden="true">🎂</span><h3>Birthday Parties</h3><p>Turn a backyard party into the one everyone remembers.</p></li>
-          <li><span aria-hidden="true">💍</span><h3>Weddings &amp; Engagements</h3><p>A Highland cow guest makes for photos nobody else has.</p></li>
-          <li><span aria-hidden="true">☀️</span><h3>Summer Camps</h3><p>Fun-filled camp days with plenty of hands-on animal time.</p></li>
-          <li><span aria-hidden="true">📖</span><h3>School Events</h3><p>Hands-on fun that teaches kids about farm animals.</p></li>
-          <li><span aria-hidden="true">🚌</span><h3>Field Trips</h3><p>An unforgettable farm-animal lesson for classes and groups.</p></li>
-          <li><span aria-hidden="true">👵</span><h3>Retirement Homes</h3><p>Gentle, calming visits that bring big smiles to residents.</p></li>
-          <li><span aria-hidden="true">🚓</span><h3>Police Stations</h3><p>Open houses, community days and a little fluffy morale boost.</p></li>
-          <li><span aria-hidden="true">🏘️</span><h3>HOA &amp; Community Events</h3><p>Neighborhood parties, block parties, festivals and fairs.</p></li>
-          <li><span aria-hidden="true">📷</span><h3>Photo Sessions</h3><p>Our animals are perfect for photos. Bring your camera!</p></li>
-          <li><span aria-hidden="true">💗</span><h3>Private “Snuggle” Experiences</h3><p>One-on-one cuddle time with our fluffiest friends.</p></li>
-          <li><span aria-hidden="true">⛪</span><h3>Churches &amp; Festivals</h3><p>Fall festivals, church picnics, markets and fairs.</p></li>
-          <li><span aria-hidden="true">🌻</span><h3>&amp; More!</h3><p>Got an idea? Tell us about it and we'll make it work.</p></li>
-        </ul>
+        <div class="event-groups">
+          <div class="event-group">
+            <h3><span aria-hidden="true">🎉</span> Parties &amp; Celebrations</h3>
+            <ul>
+              <li><strong>Birthday Parties</strong><span>Turn a backyard party into the one everyone remembers.</span></li>
+              <li><strong>Weddings &amp; Engagements</strong><span>A Highland cow guest makes for photos nobody else has.</span></li>
+              <li><strong>Photo Sessions</strong><span>Our animals are perfect for photos. Bring your camera!</span></li>
+              <li><strong>Private “Snuggle” Experiences</strong><span>One-on-one cuddle time with our fluffiest friends.</span></li>
+            </ul>
+          </div>
+          <div class="event-group">
+            <h3><span aria-hidden="true">🎒</span> Kids &amp; Schools</h3>
+            <ul>
+              <li><strong>Summer Camps</strong><span>Fun-filled camp days with plenty of hands-on animal time.</span></li>
+              <li><strong>School Events</strong><span>Hands-on fun that teaches kids about farm animals.</span></li>
+              <li><strong>Field Trips</strong><span>An unforgettable farm-animal lesson for classes and groups.</span></li>
+            </ul>
+          </div>
+          <div class="event-group">
+            <h3><span aria-hidden="true">🏘️</span> Community</h3>
+            <ul>
+              <li><strong>Retirement Homes</strong><span>Gentle, calming visits that bring big smiles to residents.</span></li>
+              <li><strong>Police Stations</strong><span>Open houses, community days and a fluffy morale boost.</span></li>
+              <li><strong>HOA &amp; Community Events</strong><span>Neighborhood parties, block parties and more.</span></li>
+              <li><strong>Churches &amp; Festivals</strong><span>Fall festivals, church picnics, markets and fairs.</span></li>
+            </ul>
+          </div>
+        </div>
+        <p class="events__more">Got another idea? Tell us about it and we'll make it work! <a href="#contact" class="btn btn--small">Book Your Event</a></p>
       </div>
     </section>
 
@@ -140,11 +155,10 @@
     </section>
 
     <!-- ===== Summer camp ===== -->
-    <!-- TODO: swap placeholder photo for the client's summer camp pictures -->
     <section class="section section--soft" id="camp">
       <div class="container feature feature--reverse">
         <div class="feature__img">
-          <img src="images/party-bottle-feeding.jpg" alt="Kids bottle-feeding a Highland calf" width="1050" height="1400" loading="lazy" decoding="async">
+          <img src="images/camp-kids-pen.jpg" alt="Campers leaning into the petting pen to meet the animals" width="1050" height="1400" loading="lazy" decoding="async">
         </div>
         <div class="feature__copy">
           <p class="script">Tons of fun, memories that last!</p>
@@ -155,7 +169,7 @@
             <li>Games, crafts and outdoor activities</li>
             <li>Petting zoo time every day</li>
           </ul>
-          <a href="#contact" class="btn">Ask About Camp Dates</a>
+          <div class="feature__btns"><a href="#contact" class="btn">Ask About Camp Dates</a> <button class="btn btn--ghost" data-project="0">See Camp Photos</button></div>
         </div>
       </div>
     </section>
@@ -200,56 +214,71 @@
       <div class="container">
         <header class="section__head">
           <p class="script">Making memories that last a lifetime</p>
-          <h2>Life on the Farm</h2>
+          <h2>Our Work</h2>
+          <p>Tap an event to see the photos and videos.</p>
         </header>
-        <ul class="gallery">
-          <li><button class="gallery__item" data-full="images/party-bottle-feeding.jpg"><img src="images/party-bottle-feeding-thumb.jpg" alt="Kids bottle-feeding a Highland calf at a backyard birthday party" width="525" height="700" loading="lazy" decoding="async"></button></li>
-          <li><button class="gallery__item" data-full="images/cows-lily-pond.jpg"><img src="images/cows-lily-pond-thumb.jpg" alt="Highland cows cooling off in a lily pond" width="700" height="525" loading="lazy" decoding="async"></button></li>
-          <li><button class="gallery__item" data-full="images/llama-selfie.jpg"><img src="images/llama-selfie-thumb.jpg" alt="A selfie with a smiling llama at a party" width="700" height="525" loading="lazy" decoding="async"></button></li>
-          <li><button class="gallery__item" data-full="images/calf-pink-bow.jpg"><img src="images/calf-pink-bow-thumb.jpg" alt="A fluffy Highland calf wearing a pink bow" width="700" height="630" loading="lazy" decoding="async"></button></li>
-          <li><button class="gallery__item" data-full="images/party-calf-1.jpg"><img src="images/party-calf-1-thumb.jpg" alt="A Highland calf and handler at a kids' birthday party" width="525" height="700" loading="lazy" decoding="async"></button></li>
-          <li><button class="gallery__item" data-full="images/herd-in-water.jpg"><img src="images/herd-in-water-thumb.jpg" alt="A herd of Highland cows and calves wading through the pasture" width="700" height="525" loading="lazy" decoding="async"></button></li>
-          <li><button class="gallery__item" data-full="images/llama-backyard.jpg"><img src="images/llama-backyard-thumb.jpg" alt="A guest walking a llama around a backyard party" width="525" height="700" loading="lazy" decoding="async"></button></li>
-          <li><button class="gallery__item" data-full="images/calves-barn.jpg"><img src="images/calves-barn-thumb.jpg" alt="Two Highland calves standing in the barn at golden hour" width="525" height="700" loading="lazy" decoding="async"></button></li>
-          <li><button class="gallery__item" data-full="images/party-pen.jpg"><img src="images/party-pen-thumb.jpg" alt="A Highland calf and a goat in the petting pen at a party" width="525" height="700" loading="lazy" decoding="async"></button></li>
-          <li><button class="gallery__item" data-full="images/sunrise-pasture.jpg"><img src="images/sunrise-pasture-thumb.jpg" alt="Cows grazing in a misty pasture at sunrise" width="700" height="525" loading="lazy" decoding="async"></button></li>
-          <li><button class="gallery__item" data-full="images/llama-evening-party.jpg"><img src="images/llama-evening-party-thumb.jpg" alt="A llama meeting kids at an evening party" width="525" height="700" loading="lazy" decoding="async"></button></li>
-          <li><button class="gallery__item" data-full="images/cow-and-calf.jpg"><img src="images/cow-and-calf-thumb.jpg" alt="A Highland cow with long horns and her calf in the pasture" width="394" height="700" loading="lazy" decoding="async"></button></li>
-          <li hidden><button class="gallery__item" data-full="images/calf-bottle.jpg"><img src="images/calf-bottle-thumb.jpg" alt="A baby Highland calf in a bandana, getting cuddles and a bottle" width="605" height="700" loading="lazy" decoding="async"></button></li>
-          <li hidden><button class="gallery__item" data-full="images/fluffy-calf.jpg"><img src="images/fluffy-calf-thumb.jpg" alt="A fluffy cream-colored Highland calf on a lead" width="525" height="700" loading="lazy" decoding="async"></button></li>
-          <li hidden><button class="gallery__item" data-full="images/big-highland.jpg"><img src="images/big-highland-thumb.jpg" alt="A big Highland cow with long horns in the field" width="525" height="700" loading="lazy" decoding="async"></button></li>
-          <li hidden><button class="gallery__item" data-full="images/llama-party.jpg"><img src="images/llama-party-thumb.jpg" alt="A guest hugging a llama at a party" width="525" height="700" loading="lazy" decoding="async"></button></li>
-          <li hidden><button class="gallery__item" data-full="images/calves-trailer.jpg"><img src="images/calves-trailer-thumb.jpg" alt="Two Highland calves ready to travel in the trailer" width="384" height="700" loading="lazy" decoding="async"></button></li>
-          <li hidden><button class="gallery__item" data-full="images/cows-mud-pond.jpg"><img src="images/cows-mud-pond-thumb.jpg" alt="Highland cows relaxing by the pond" width="525" height="700" loading="lazy" decoding="async"></button></li>
-          <li hidden><button class="gallery__item" data-full="images/party-calf-2.jpg"><img src="images/party-calf-2-thumb.jpg" alt="A guest holding a Highland calf on a lead at a party" width="525" height="700" loading="lazy" decoding="async"></button></li>
-          <li hidden><button class="gallery__item" data-full="images/highland-pair.jpg"><img src="images/highland-pair-thumb.jpg" alt="Two Highland cows out in the field on the farm" width="525" height="700" loading="lazy" decoding="async"></button></li>
-          <li hidden><button class="gallery__item" data-full="images/goats.jpg"><img src="images/goats.jpg" alt="A girl running with a herd of goats and a sheep" width="618" height="761" loading="lazy" decoding="async"></button></li>
-          <li hidden><button class="gallery__item" data-full="images/calf-deputies.jpg"><img src="images/calf-deputies-thumb.jpg" alt="Sheriff's deputies kneeling with a Highland calf" width="525" height="700" loading="lazy" decoding="async"></button></li>
-          <li hidden><button class="gallery__item" data-full="images/highland-cow.jpg"><img src="images/highland-cow.jpg" alt="Highland cow in the pasture" width="619" height="761" loading="lazy" decoding="async"></button></li>
-          <li hidden><button class="gallery__item" data-full="images/pigs.jpg"><img src="images/pigs.jpg" alt="Kids with the pigs in their pen at sunset" width="619" height="761" loading="lazy" decoding="async"></button></li>
+        <ul class="projects">
+          <li class="project project--camp">
+            <button class="project__btn" data-project="0" aria-label="Open Summer Camp gallery">
+              <img src="images/camp-group-tent-thumb.jpg" alt="Campers gathered under the tent with the animals" width="700" height="525" loading="lazy" decoding="async">
+              <span class="project__info">
+                <span class="project__count">6 photos · 4 videos</span>
+                <span class="project__title"><span aria-hidden="true">☀️</span> Summer Camp</span>
+                <span class="project__blurb">Animal care, petting zoo time, water slides and field games.</span>
+                <span class="project__cta">View gallery →</span>
+              </span>
+            </button>
+          </li>
+          <li class="project project--weddings">
+            <button class="project__btn" data-project="1" aria-label="Open Weddings gallery">
+              <img src="images/wedding-bride-calf-thumb.jpg" alt="A bride cuddling a Highland calf" width="700" height="603" loading="lazy" decoding="async">
+              <span class="project__info">
+                <span class="project__count">1 photo</span>
+                <span class="project__title"><span aria-hidden="true">💍</span> Weddings</span>
+                <span class="project__blurb">A fluffy Highland guest for photos nobody else has.</span>
+                <span class="project__cta">View gallery →</span>
+              </span>
+            </button>
+          </li>
+          <li class="project project--parties">
+            <button class="project__btn" data-project="2" aria-label="Open Birthday Parties &amp; Private Events gallery">
+              <img src="images/party-bottle-feeding-thumb.jpg" alt="Kids bottle-feeding a Highland calf at a party" width="525" height="700" loading="lazy" decoding="async">
+              <span class="project__info">
+                <span class="project__count">12 photos · 1 video</span>
+                <span class="project__title"><span aria-hidden="true">🎂</span> Birthday Parties &amp; Private Events</span>
+                <span class="project__blurb">Highland calves, llamas and goats at backyard parties.</span>
+                <span class="project__cta">View gallery →</span>
+              </span>
+            </button>
+          </li>
+          <li class="project project--community">
+            <button class="project__btn" data-project="3" aria-label="Open Police &amp; Community Events gallery">
+              <img src="images/calf-deputies-thumb.jpg" alt="Sheriff&#x27;s deputies kneeling with a Highland calf" width="525" height="700" loading="lazy" decoding="async">
+              <span class="project__info">
+                <span class="project__count">1 photo · 1 video</span>
+                <span class="project__title"><span aria-hidden="true">🚓</span> Police &amp; Community Events</span>
+                <span class="project__blurb">Police stations, parks and neighborhood events.</span>
+                <span class="project__cta">View gallery →</span>
+              </span>
+            </button>
+          </li>
+          <li class="project project--farm">
+            <button class="project__btn" data-project="4" aria-label="Open Life on the Farm gallery">
+              <img src="images/highland-sunset-thumb.jpg" alt="A Highland cow resting in tall grass at sunset" width="525" height="700" loading="lazy" decoding="async">
+              <span class="project__info">
+                <span class="project__count">19 photos · 3 videos</span>
+                <span class="project__title"><span aria-hidden="true">🌅</span> Life on the Farm</span>
+                <span class="project__blurb">Highland cows, llamas, calves and the whole crew at home.</span>
+                <span class="project__cta">View gallery →</span>
+              </span>
+            </button>
+          </li>
         </ul>
         <p class="gallery__more">
-          <button class="btn" id="gallery-more">Show More Photos</button>
           <a href="https://www.instagram.com/wallingtreefarm/" target="_blank" rel="noopener" class="btn btn--ghost">More on Instagram @wallingtreefarm</a>
         </p>
-        <div class="videos">
-          <h3 class="videos__title">Watch the Crew <span class="script">♥</span></h3>
-          <ul class="videos__list">
-            <li>
-              <video controls playsinline preload="none" poster="videos/calf-walk-poster.jpg" width="720" height="1280">
-                <source src="videos/calf-walk.mp4" type="video/mp4">
-              </video>
-              <p>A Highland calf out for an evening stroll</p>
-            </li>
-            <li>
-              <video controls playsinline preload="none" poster="videos/rooster-ride-poster.jpg" width="720" height="1280">
-                <source src="videos/rooster-ride.mp4" type="video/mp4">
-              </video>
-              <p>Riding shotgun with our rooster</p>
-            </li>
-          </ul>
-        </div>
       </div>
+      <script type="application/json" id="projects-data">[{"title": "Summer Camp", "items": [{"type": "image", "src": "images/camp-kids-pen.jpg", "thumb": "images/camp-kids-pen-thumb.jpg", "alt": "Campers leaning into the petting pen"}, {"type": "image", "src": "images/camp-group-tent.jpg", "thumb": "images/camp-group-tent-thumb.jpg", "alt": "Campers gathered under the tent with the animals"}, {"type": "video", "src": "videos/camp-ponies.mp4", "thumb": "videos/camp-ponies-poster.jpg", "alt": "Campers leading the ponies around the yard"}, {"type": "image", "src": "images/camp-goats.jpg", "thumb": "images/camp-goats-thumb.jpg", "alt": "Campers feeding the goats"}, {"type": "video", "src": "videos/camp-water-slide.mp4", "thumb": "videos/camp-water-slide-poster.jpg", "alt": "Splashing down the water slide at camp"}, {"type": "image", "src": "images/camp-pen-tent.jpg", "thumb": "images/camp-pen-tent-thumb.jpg", "alt": "Kids meeting a tortoise, bunny and goat in the pen"}, {"type": "video", "src": "videos/camp-petting-pen.mp4", "thumb": "videos/camp-petting-pen-poster.jpg", "alt": "Goats and bunnies in the camp petting pen"}, {"type": "image", "src": "images/camp-petting-zoo.jpg", "thumb": "images/camp-petting-zoo-thumb.jpg", "alt": "Campers in the petting zoo pen"}, {"type": "video", "src": "videos/camp-field-games.mp4", "thumb": "videos/camp-field-games-poster.jpg", "alt": "Field games and slip and slide at camp"}, {"type": "image", "src": "images/camp-pony-yard.jpg", "thumb": "images/camp-pony-yard-thumb.jpg", "alt": "Campers walking a pony across the yard"}]}, {"title": "Weddings", "items": [{"type": "image", "src": "images/wedding-bride-calf.jpg", "thumb": "images/wedding-bride-calf-thumb.jpg", "alt": "A bride cuddling a Highland calf"}]}, {"title": "Birthday Parties & Private Events", "items": [{"type": "image", "src": "images/party-bottle-feeding.jpg", "thumb": "images/party-bottle-feeding-thumb.jpg", "alt": "Kids bottle-feeding a Highland calf at a backyard birthday party"}, {"type": "video", "src": "videos/party-calf-toddler.mp4", "thumb": "videos/party-calf-toddler-poster.jpg", "alt": "A toddler meeting a Highland calf at a party"}, {"type": "image", "src": "images/event-calf-feeding.jpg", "thumb": "images/event-calf-feeding-thumb.jpg", "alt": "A little guest feeding a Highland calf"}, {"type": "image", "src": "images/event-llama-kids.jpg", "thumb": "images/event-llama-kids-thumb.jpg", "alt": "Kids walking a llama at an event"}, {"type": "image", "src": "images/party-calf-1.jpg", "thumb": "images/party-calf-1-thumb.jpg", "alt": "A Highland calf and handler at a kids' birthday party"}, {"type": "image", "src": "images/llama-selfie.jpg", "thumb": "images/llama-selfie-thumb.jpg", "alt": "A selfie with a smiling llama at a party"}, {"type": "image", "src": "images/event-llama-guest.jpg", "thumb": "images/event-llama-guest-thumb.jpg", "alt": "A guest posing with a llama"}, {"type": "image", "src": "images/party-pen.jpg", "thumb": "images/party-pen-thumb.jpg", "alt": "A Highland calf and a goat in the petting pen at a party"}, {"type": "image", "src": "images/party-calf-closeup.jpg", "thumb": "images/party-calf-closeup-thumb.jpg", "alt": "A Highland calf in a bandana at an indoor party"}, {"type": "image", "src": "images/llama-evening-party.jpg", "thumb": "images/llama-evening-party-thumb.jpg", "alt": "A llama meeting kids at an evening party"}, {"type": "image", "src": "images/party-calf-2.jpg", "thumb": "images/party-calf-2-thumb.jpg", "alt": "A guest holding a Highland calf on a lead at a party"}, {"type": "image", "src": "images/llama-party.jpg", "thumb": "images/llama-party-thumb.jpg", "alt": "A guest hugging a llama at a party"}, {"type": "image", "src": "images/llama-backyard.jpg", "thumb": "images/llama-backyard-thumb.jpg", "alt": "A guest walking a llama around a backyard party"}]}, {"title": "Police & Community Events", "items": [{"type": "image", "src": "images/calf-deputies.jpg", "thumb": "images/calf-deputies-thumb.jpg", "alt": "Sheriff's deputies kneeling with a Highland calf"}, {"type": "video", "src": "videos/community-pony.mp4", "thumb": "videos/community-pony-poster.jpg", "alt": "Visitors meeting our pony at a park event"}]}, {"title": "Life on the Farm", "items": [{"type": "image", "src": "images/highland-sunset.jpg", "thumb": "images/highland-sunset-thumb.jpg", "alt": "A Highland cow resting in tall grass at sunset"}, {"type": "image", "src": "images/llama-sunrise.jpg", "thumb": "images/llama-sunrise-thumb.jpg", "alt": "A llama resting in the pasture at sunrise"}, {"type": "video", "src": "videos/farm-field.mp4", "thumb": "videos/farm-field-poster.jpg", "alt": "The whole crew in the field: donkey, llamas, goats and pig"}, {"type": "image", "src": "images/highland-blue-sky.jpg", "thumb": "images/highland-blue-sky-thumb.jpg", "alt": "A Highland cow under a blue sky"}, {"type": "image", "src": "images/horse-ride-sunset.jpg", "thumb": "images/horse-ride-sunset-thumb.jpg", "alt": "Horseback at sunset on the farm"}, {"type": "image", "src": "images/herd-in-water.jpg", "thumb": "images/herd-in-water-thumb.jpg", "alt": "A herd of Highland cows and calves wading through the pasture"}, {"type": "image", "src": "images/calf-pink-bow.jpg", "thumb": "images/calf-pink-bow-thumb.jpg", "alt": "A fluffy Highland calf wearing a pink bow"}, {"type": "image", "src": "images/cows-lily-pond.jpg", "thumb": "images/cows-lily-pond-thumb.jpg", "alt": "Highland cows cooling off in a lily pond"}, {"type": "video", "src": "videos/calf-walk.mp4", "thumb": "videos/calf-walk-poster.jpg", "alt": "A Highland calf out for an evening stroll"}, {"type": "image", "src": "images/calves-barn.jpg", "thumb": "images/calves-barn-thumb.jpg", "alt": "Two Highland calves in the barn at golden hour"}, {"type": "image", "src": "images/cow-and-calf.jpg", "thumb": "images/cow-and-calf-thumb.jpg", "alt": "A Highland cow with her calf in the pasture"}, {"type": "image", "src": "images/sunrise-pasture.jpg", "thumb": "images/sunrise-pasture-thumb.jpg", "alt": "Cows grazing in a misty pasture at sunrise"}, {"type": "image", "src": "images/calf-bottle.jpg", "thumb": "images/calf-bottle-thumb.jpg", "alt": "A baby Highland calf getting cuddles and a bottle"}, {"type": "image", "src": "images/big-highland.jpg", "thumb": "images/big-highland-thumb.jpg", "alt": "A big Highland cow with long horns"}, {"type": "video", "src": "videos/rooster-ride.mp4", "thumb": "videos/rooster-ride-poster.jpg", "alt": "Riding shotgun with our rooster"}, {"type": "image", "src": "images/fluffy-calf.jpg", "thumb": "images/fluffy-calf-thumb.jpg", "alt": "A fluffy cream-colored Highland calf on a lead"}, {"type": "image", "src": "images/calves-trailer.jpg", "thumb": "images/calves-trailer-thumb.jpg", "alt": "Two Highland calves ready to travel"}, {"type": "image", "src": "images/cows-mud-pond.jpg", "thumb": "images/cows-mud-pond-thumb.jpg", "alt": "Highland cows relaxing by the pond"}, {"type": "image", "src": "images/highland-pair.jpg", "thumb": "images/highland-pair-thumb.jpg", "alt": "Two Highland cows out in the field"}, {"type": "image", "src": "images/goats.jpg", "thumb": "images/goats.jpg", "alt": "A girl running with a herd of goats"}, {"type": "image", "src": "images/highland-cow.jpg", "thumb": "images/highland-cow.jpg", "alt": "Highland cow in the pasture"}, {"type": "image", "src": "images/pigs.jpg", "thumb": "images/pigs.jpg", "alt": "Kids with the pigs at sunset"}]}]</script>
     </section>
 
     <!-- ===== Contact ===== -->
@@ -288,9 +317,19 @@
     </div>
   </footer>
 
-  <div class="lightbox" id="lightbox" hidden>
-    <button class="lightbox__close" aria-label="Close">×</button>
-    <img alt="">
+  <div class="viewer" id="viewer" hidden role="dialog" aria-modal="true" aria-labelledby="viewer-title">
+    <div class="viewer__top">
+      <h2 class="viewer__title" id="viewer-title"></h2>
+      <span class="viewer__count"></span>
+      <button class="viewer__close" aria-label="Close gallery">×</button>
+    </div>
+    <div class="viewer__stage">
+      <button class="viewer__nav viewer__nav--prev" aria-label="Previous">‹</button>
+      <div class="viewer__media"></div>
+      <button class="viewer__nav viewer__nav--next" aria-label="Next">›</button>
+    </div>
+    <p class="viewer__caption"></p>
+    <ul class="viewer__thumbs"></ul>
   </div>
 
   <script src="js/main.js"></script>

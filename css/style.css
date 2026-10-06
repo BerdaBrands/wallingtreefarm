@@ -246,15 +246,10 @@ button { font: inherit; cursor: pointer; }
 .project__blurb { font-size: 0.95rem; opacity: 0.9; }
 .project__cta { margin-top: 4px; font-weight: 800; color: #9ff1f6; }
 .gallery__more { display: flex; flex-wrap: wrap; justify-content: center; gap: 14px; margin-top: 32px; }
-@media (min-width: 640px) {
-  .projects { grid-template-columns: repeat(2, 1fr); }
-  .project--camp { grid-column: 1 / -1; }
-  .project--camp .project__btn { min-height: 380px; }
-}
+@media (min-width: 640px) { .projects { grid-template-columns: repeat(2, 1fr); } }
 @media (min-width: 900px) {
   .projects { grid-template-columns: repeat(3, 1fr); gap: 20px; }
-  .project--camp { grid-column: span 2; }
-  .project__btn { min-height: 340px; }
+  .project__btn { min-height: 360px; }
 }
 
 /* ---------- Contact ---------- */
